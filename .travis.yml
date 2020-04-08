@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t KajtiChr/my-frontend -f mydockerfrontend/Dockerfile.dev mydockerfrontend/.
+  - docker build -t tadakami/devops-maciej_kajetan_chrzanowski -f mydockerfrontend/Dockerfile.dev mydockerfrontend/.
 
 script:
-  - docker run -e CI=true KajtiChr/my-frontend yarn test
+  - docker run -e CI=true tadakami/devops-maciej_kajetan_chrzanowski yarn test
